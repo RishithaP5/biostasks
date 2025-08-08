@@ -7,7 +7,7 @@
   1. Passive (No direct interaction with the target).
   2. Active ( Direct interaction with the target).
 
-### Types of Recon
+## Types of Recon
 1. Passive Recon
    - Eg: DNS queries, social media analysis, google dorking.
    - DNS query: A request sent by the dns client to the dns server to resolve a domain name into its corresponding IP address.
@@ -30,5 +30,69 @@
        - reading and writing data across networks, banner grabbing.
      - Nikto
        - A web browser scanner that checks for the outdated versions, vulnerable scripts, and other security issues on the webserver.
-    
+      
+#### BEST PRACTICES
+- Always start with passive methods for detection.
+- Use anonymizing techniques(VPN, TOR) during active recon.
+- Document all findings systematically for further analysis.
+
+# Enumeration
+
+## what is enumeration?
+- gathering  detailed information about targets network and system after initial scanning.
+- It helps identify things like username, shared files, software details that might be vulnerable.
+- Enumeration is key in cyberseccurity to find weak spots that could be exploited.
+
+### TYPES OF INFO GATHERED USING ENUMERATION
+1. Network source
+2. users and groups
+3. The various machine names
+4. Applications
+5. DNS details
+
+### PROCESS OF ENUMERATION
+<img width="1138" height="854" alt="image" src="https://github.com/user-attachments/assets/ee8ae3fc-6f4f-41de-9501-1f75cb28c013" />
+
+#### SMTP ENUMERATION
+- SMTP(Simple Mail Transfer Protocol) enumeration is a technique used in penetration testing to gather information about a mail server, it's users, and possible vulnerabilities.
+  - Purpose:
+    - Identifies valid email addresses and user accounts.
+    - Check for misconfigurations and vulnerabilities in the mail server.
      
+#### SMTP-USER-ENUM
+- SMTP-user-enum is a command-line-tool used to enumerate valid usernames on an smtp server
+- by sending specific SMTP commands like
+  - VRFY (asks the server to verify if a username exists)
+  - EXPN  (expands a mailing list to show its members.
+  - RCPT TO (checks if the server accespts mail for a given address.
+- It helps identify existing email addresses for potential use in attacks like phishing or brute force.
+
+- Installation:
+  - git clone https://github.com/pentestmonkey/smtp-user-enum
+ 
+### SNMP(Simple network management protocol)
+- Is an internet standard protocol used to monitor and manage networks devices connected over an IP.
+- It is used for communication between routers, firewalls, loadbalancers, servers, CCTV cameras and wireless devices.
+
+### SNMP ENUMERATION
+- Process of gathering information about devices on the  network using simple network management protocol(SNMP).
+
+- Purpose:
+  - To extract information about network devices such as:
+    - System details(name, uptime, services)
+    - Installed software and hardware configurations.
+    - Active ports and processes.
+   
+#### SNMPWALK
+- snmpwalk is a command-line tool used for querying and retrieving data from SNMP-enabled devices.
+-  It works by performing a sequence of SNMP GETNEXT requests,
+-   walking through a network device's Management Information Base (MIB) to gather detailed information.
+
+- Installation:
+  - sudo apt install snmp
+ 
+  
+
+                         
+                         
+
