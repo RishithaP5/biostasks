@@ -91,6 +91,30 @@
 - Installation:
   - sudo apt install snmp
  
+
+### FTP (File Transfer Protocol)
+-  is a standard network protocol used to transfer files between a client and a server over a TCP/IP network, such as the internet.
+
+### FTP ENUMERATION
+- Process of discovering valid FTP usernames and their associated permissions on a target system.
+
+- Purpose:
+  - Identify valid accounts.
+  - Access the security posture of the FTP server.
+    
+ #### FTP ANONYMOUS LOGIN
+ - Anonymous FTP allows users to access files without requiring a specific username or password.
+ - using "anonymous" as the username and typycally an email address as a password.
+
+######## Risks
+
+- Unauthorized access:: Sensitive files may be exposed
+- Data Theft: Potential for unauthorized downloading of data.
+- Data Tampering: Users could potentially upload malicious files.
+
+  ### SMB(Server Message block)
+  - is a network file sharing protocol that enables users and applications to access files, printers, and other resources on the network.
+  - 
   
 
                          
